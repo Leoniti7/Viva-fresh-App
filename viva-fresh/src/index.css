@@ -204,3 +204,70 @@ body {
     color: #008751;
     font-weight: bold;
 }
+
+/* Stilizimi i ri për fotot reale */
+.product-image-container {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Kjo parandalon shtrembërimin e fotos */
+}
+
+/* Containeri për dy butonat */
+.product-actions {
+    display: flex;
+    gap: 8px; /* Hapësira mes dy butonave */
+    margin-top: auto; /* I shtyn butonat gjithmonë në fund të kartelës */
+}
+
+/* Stili bazik i përbashkët për butonat e aksioneve */
+.btn-action {
+    flex: 1; /* I bën të dy butonat me gjerësi të barabartë */
+    padding: 8px 5px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+/* Kur mausi kalon mbi butona (Hover effect) */
+.btn-action:active {
+    transform: scale(0.95);
+}
+
+/* Butoni Edit (I Kaltër) */
+.btn-edit {
+    background-color: #2f80ed;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #1b66ca;
+}
+
+/* Butoni Delete (I Kuq) */
+.btn-delete {
+    background-color: #eb5757;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #cf3c3c;
+}
